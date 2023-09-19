@@ -6,6 +6,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.is;
+
 public class UserCreationTest implements TestData{
 
     private BurgersClient client = new BurgersClient();
@@ -35,18 +38,40 @@ public class UserCreationTest implements TestData{
     public void userCreationSuccess() {
         user = USER;
         ValidatableResponse response = client.createUser(user);
-        response.assertThat().statusCode(200);
+        response.assertThat().statusCode(200).body("success", is(true));
     }
 
     @Test
     public void userCreationWithRegisteredCredentialsFailure() {
        user = USER;
-       client.createUser(USER);
-       ValidatableResponse response = client.createUser(USER);
-       response.assertThat().statusCode(403);
-
+       client.createUser(user);
+       ValidatableResponse response = client.createUser(user);
+       response.assertThat().statusCode(403).body(containsString("User already exists"));
     }
 
+    @Test
+    public void userCreationWithoutEmailFailure() {
+        user = NO_EMAIL_USER;
+        client.createUser(user);
+        ValidatableResponse response = client.createUser(user);
+        response.assertThat().statusCode(403).body(containsString("Email, password and name are required fields"));
+    }
+
+    @Test
+    public void userCreationWithoutPasswordFailure() {
+        user = NO_PASSWORD_USER;
+        client.createUser(user);
+        ValidatableResponse response = client.createUser(user);
+        response.assertThat().statusCode(403).body(containsString("Email, password and name are required fields"));
+    }
+
+    @Test
+    public void userCreationWithoutNameFailure() {
+        user = NO_NAME_USER;
+        client.createUser(user);
+        ValidatableResponse response = client.createUser(user);
+        response.assertThat().statusCode(403).body(containsString("Email, password and name are required fields"));
+    }
 
 
     }
