@@ -15,7 +15,7 @@ public class UserCreationTest implements TestData{
 
     private RequestSpecification requestSpecification;
 
-    User user;
+    private User user;
 
 
     @Before
