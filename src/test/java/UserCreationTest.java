@@ -2,6 +2,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,6 +11,8 @@ public class UserCreationTest implements TestData{
     private BurgersClient client = new BurgersClient();
 
     private RequestSpecification requestSpecification;
+
+    User user;
 
 
     @Before
@@ -21,13 +24,29 @@ public class UserCreationTest implements TestData{
         client.setRequestSpecification(requestSpecification);
         }
 
+    @After
+    public void tearDown() {
+       if (user.equals(USER)) {
+           Authorization authorization = client.login(user).extract().as(Authorization.class);
+           client.deleteUser(authorization.getAccessToken());}
+    }
+
     @Test
     public void userCreationSuccess() {
-        User user = User.builder().email("test-burger1@test.com").password("12345").name("John").build();
+        user = USER;
         ValidatableResponse response = client.createUser(user);
         response.assertThat().statusCode(200);
+    }
+
+    @Test
+    public void userCreationWithRegisteredCredentialsFailure() {
+       user = USER;
+       client.createUser(USER);
+       ValidatableResponse response = client.createUser(USER);
+       response.assertThat().statusCode(403);
 
     }
+
 
 
     }

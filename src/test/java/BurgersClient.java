@@ -19,5 +19,25 @@ public class BurgersClient implements TestData {
                 .log().all();
     }
 
+    public ValidatableResponse login(User user) {
+        return given()
+                .spec(requestSpecification)
+                .body(user)
+                .post(LOGIN_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
+    public ValidatableResponse deleteUser(String token) {
+        return given()
+                .spec(requestSpecification)
+                .header("authorization", token)
+                .delete(USER_DATA_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
+
+
 
 }
