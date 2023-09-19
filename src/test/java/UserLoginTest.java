@@ -41,7 +41,6 @@ public class UserLoginTest implements TestData {
     client.createUser(user);
     ValidatableResponse response = client.login(user);
     response.assertThat().statusCode(200).body("success", is(true));
-    System.out.println("RESPONCE IS SUCCESSFUL " + response.extract().jsonPath().getString("success"));
   }
 
   @Test
