@@ -37,6 +37,14 @@ public class BurgersClient implements TestData {
                 .log().all();
     }
 
+    public ValidatableResponse getIngredients () {
+        return given()
+                .spec(requestSpecification)
+                .get(INGREDIENTS_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
 
 
 
