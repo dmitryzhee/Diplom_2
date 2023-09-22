@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e270bf18-bcc8-4acf-8f7e-10dcf9d2a14a" name="Changes" comment="Updated UserLoginTest">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Ingredients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IngredientsData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
+    <list default="true" id="e270bf18-bcc8-4acf-8f7e-10dcf9d2a14a" name="Changes" comment="Added OrderCreationTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/OrderIngredients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgersClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IngredientsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IngredientsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Sky/Home/Sprint_7/pom.xml"
+    "last_opened_file_path": "C:/Sky/Home/Diplom_2_API/pom.xml"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -153,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695153231964</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added OrderCreationTest">
+      <created>1695242624720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695242624720</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +174,7 @@
     <MESSAGE value="Updated UserCreationTest" />
     <MESSAGE value="Added UserLoginTest" />
     <MESSAGE value="Updated UserLoginTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UserLoginTest" />
+    <MESSAGE value="Added OrderCreationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added OrderCreationTest" />
   </component>
 </project>

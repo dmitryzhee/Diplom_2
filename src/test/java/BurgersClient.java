@@ -45,6 +45,15 @@ public class BurgersClient implements TestData {
                 .log().all();
     }
 
+    public ValidatableResponse makeOrder(String ingredientsID) {
+        return given()
+                .spec(requestSpecification)
+                .body(ingredientsID)
+                .post(ORDER_CREATION_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
 
 
 
