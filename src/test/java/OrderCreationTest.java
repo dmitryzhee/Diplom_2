@@ -9,6 +9,8 @@ import org.junit.Test;
 import java.util.List;
 import java.util.Random;
 
+import static org.hamcrest.CoreMatchers.containsString;
+
 public class OrderCreationTest implements TestData{
 
   private BurgersClient client = new BurgersClient();
@@ -41,6 +43,23 @@ public class OrderCreationTest implements TestData{
     String json = gson.toJson(orderIngredients);
     ValidatableResponse response = client.makeOrder(json);
     response.assertThat().statusCode(200);
-
   }
+
+  @Test
+  public void orderCreationNoIngredientsFailure() {
+    ValidatableResponse response = client.makeOrder("");
+    response.assertThat().statusCode(400).assertThat().body(containsString("Ingredient ids must be provided"));
+  }
+
+  @Test
+  public void orderCreationInvalidIngredientsFailure() {
+    Gson gson = new Gson();
+    String orderIngredient = ingredients.get(random.nextInt(ingredients.size())).get_id() + "invalid";
+    OrderIngredients orderIngredients = new OrderIngredients(orderIngredient);
+    String json = gson.toJson(orderIngredients);
+    ValidatableResponse response = client.makeOrder(json);
+    response.assertThat().statusCode(500);
+  }
+
+
 }
