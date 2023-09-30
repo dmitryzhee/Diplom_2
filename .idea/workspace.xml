@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated OrderCreationTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgersClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserCreationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserCreationTest.class" afterDir="false" />
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated OrderCreationTest and UserCreationTest">
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +43,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserOrdersTest.authorizedUserGetOrdersSuccess">
+  <component name="RunManager" selected="JUnit.UserOrdersTest.getOrdersUnauthorizedUserFailure">
     <configuration name="OrderCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,16 +58,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderCreationTest" />
       <option name="METHOD_NAME" value="orderCreationSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCreationTest.userCreationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2_API" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserCreationTest" />
-      <option name="METHOD_NAME" value="userCreationSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,6 +83,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserOrdersTest.getOrdersUnauthorizedUserFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserOrdersTest" />
+      <option name="METHOD_NAME" value="getOrdersUnauthorizedUserFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserOrdersTest.getOrdersUnauthorizedUserFailure" />
         <item itemvalue="JUnit.UserOrdersTest.authorizedUserGetOrdersSuccess" />
         <item itemvalue="JUnit.OrderCreationTest" />
         <item itemvalue="JUnit.OrderCreationTest.orderCreationSuccess" />
         <item itemvalue="JUnit.UserLoginTest.existingUserLoginSuccess" />
-        <item itemvalue="JUnit.UserCreationTest.userCreationSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696093644525</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated OrderCreationTest and UserCreationTest">
+      <created>1696098746283</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696098746283</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +185,7 @@
     <MESSAGE value="Updated UserLoginTest" />
     <MESSAGE value="Added OrderCreationTest" />
     <MESSAGE value="Updated OrderCreationTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated OrderCreationTest" />
+    <MESSAGE value="Updated OrderCreationTest and UserCreationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated OrderCreationTest and UserCreationTest" />
   </component>
 </project>

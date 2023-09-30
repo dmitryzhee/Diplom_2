@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 
 public class UserOrdersTest implements TestData{
@@ -45,7 +46,7 @@ public class UserOrdersTest implements TestData{
   }
 
   @Test
-  public void authorizedUserGetOrdersSuccess() {
+  public void getOrdersForAuthorizedUserSuccess() {
     Gson gson = new Gson();
     user = USER;
     client.createUser(user);
@@ -66,6 +67,14 @@ public class UserOrdersTest implements TestData{
     }
     Assert.assertTrue(orderStatus.size() == burgerCount);
   }
+
+  @Test
+  public void getOrdersUnauthorizedUserFailure() {
+    ValidatableResponse response = client.getUserOrders("");
+    response.assertThat().statusCode(401).body(containsString("You should be authorised"));
+  }
+
+
 
 
 
