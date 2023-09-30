@@ -31,7 +31,7 @@ public class BurgersClient implements TestData {
     public ValidatableResponse logout(String authorization) {
         return given()
                 .spec(requestSpecification)
-                .body(authorization)
+                .body(String.format("{\"token\": \"%s\"}", authorization))
                 .post(LOGOUT_ENDPOINT)
                 .then()
                 .log().all();

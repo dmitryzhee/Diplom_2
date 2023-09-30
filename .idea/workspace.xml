@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated UserOrdersTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserEditTest.java" afterDir="false" />
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Added UserEditTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgersClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserEditTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696108269701</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added UserEditTest">
+      <created>1696111311889</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696111311889</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +210,7 @@
     <MESSAGE value="Updated OrderCreationTest" />
     <MESSAGE value="Updated OrderCreationTest and UserCreationTest" />
     <MESSAGE value="Updated UserOrdersTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UserOrdersTest" />
+    <MESSAGE value="Added UserEditTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UserEditTest" />
   </component>
 </project>

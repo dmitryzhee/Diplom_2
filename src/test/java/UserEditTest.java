@@ -59,10 +59,12 @@ public class UserEditTest implements TestData{
   public void authorizedUserPasswordChangeSuccess() {
     user = USER;
     client.createUser(user);
-
     Authorization authorization = client.login(user).extract().as(Authorization.class);
     user.setPassword("editedPassword123!");
-    ValidatableResponse response = client.editUser(authorization.getAccessToken(), user);
+    client.editUser(authorization.getAccessToken(), user);
+    client.logout(authorization.getRefreshToken());
+    ValidatableResponse response = client.login(user);
+    response.assertThat().statusCode(200).body("accessToken", notNullValue());
 
   }
 
