@@ -45,29 +45,22 @@ public class BurgersClient implements TestData {
                 .log().all();
     }
 
-    public ValidatableResponse makeOrder(String ingredientsID) {
-        return given()
-                .spec(requestSpecification)
-                .body(ingredientsID)
-                .post(ORDER_CREATION_ENDPOINT)
-                .then()
-                .log().all();
-    }
-
-    public ValidatableResponse makeOrderAuthorized(String ingredientsID, String authorization) {
+    public ValidatableResponse makeOrder(String ingredientsID, String authorization) {
         return given()
                 .spec(requestSpecification)
                 .header("Authorization", authorization)
                 .body(ingredientsID)
-                .post(ORDER_CREATION_ENDPOINT)
+                .post(ORDERS_ENDPOINT)
                 .then()
                 .log().all();
     }
 
-
-
-
-
-
-
+    public ValidatableResponse getUserOrders(String authorization) {
+        return given()
+                .spec(requestSpecification)
+                .header("Authorization", authorization)
+                .get(ORDERS_ENDPOINT)
+                .then()
+                .log().all();
+    }
 }

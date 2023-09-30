@@ -1,13 +1,21 @@
 public class Order {
 
-  private String ingredients;
+  private String _id;
+  private String status;
 
-  public String getIngredients() {
-    return ingredients;
+  public String get_id() {
+    return _id;
   }
 
-  public void setIngredients(String ingredients) {
-    this.ingredients = ingredients;
+  public void set_id(String _id) {
+    this._id = _id;
   }
 
+  public String getStatus() {
+    return status;
+  }
+
+  public void setStatus(String status) {
+    this.status = status;
+  }
 }

@@ -9,7 +9,7 @@ public interface TestData {
 
     String LOGIN_ENDPOINT = "/api/auth/login";
 
-    String ORDER_CREATION_ENDPOINT = "/api/orders";
+    String ORDERS_ENDPOINT = "/api/orders";
 
     String INGREDIENTS_ENDPOINT = "/api/ingredients";
 

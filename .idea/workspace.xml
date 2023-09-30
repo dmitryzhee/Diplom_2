@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated UserCreationTest">
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated OrderCreationTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgersClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserCreationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserCreationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderCreationTest.authorizedUserOrderCreationSuccess">
+  <component name="RunManager" selected="JUnit.UserOrdersTest.authorizedUserGetOrdersSuccess">
     <configuration name="OrderCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
@@ -56,40 +64,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderCreationTest.authorizedUserOrderCreationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderCreationTest.orderCreationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderCreationTest" />
-      <option name="METHOD_NAME" value="authorizedUserOrderCreationSuccess" />
+      <option name="METHOD_NAME" value="orderCreationSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderCreationTest.orderCreationInvalidIngredientsFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2_API" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderCreationTest" />
-      <option name="METHOD_NAME" value="orderCreationInvalidIngredientsFailure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCreationTest.userCreationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserCreationTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="userCreationSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserLoginTest.existingUserLoginSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserLoginTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="existingUserLoginSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserOrdersTest.authorizedUserGetOrdersSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserOrdersTest" />
+      <option name="METHOD_NAME" value="authorizedUserGetOrdersSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderCreationTest.authorizedUserOrderCreationSuccess" />
-        <item itemvalue="JUnit.UserLoginTest" />
-        <item itemvalue="JUnit.UserCreationTest" />
+        <item itemvalue="JUnit.UserOrdersTest.authorizedUserGetOrdersSuccess" />
         <item itemvalue="JUnit.OrderCreationTest" />
-        <item itemvalue="JUnit.OrderCreationTest.orderCreationInvalidIngredientsFailure" />
+        <item itemvalue="JUnit.OrderCreationTest.orderCreationSuccess" />
+        <item itemvalue="JUnit.UserLoginTest.existingUserLoginSuccess" />
+        <item itemvalue="JUnit.UserCreationTest.userCreationSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695242624720</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated OrderCreationTest">
+      <created>1696093644525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696093644525</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +188,7 @@
     <MESSAGE value="Added UserLoginTest" />
     <MESSAGE value="Updated UserLoginTest" />
     <MESSAGE value="Added OrderCreationTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added OrderCreationTest" />
+    <MESSAGE value="Updated OrderCreationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated OrderCreationTest" />
   </component>
 </project>

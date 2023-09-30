@@ -10,8 +10,7 @@ import org.junit.Test;
 import java.util.List;
 import java.util.Random;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 
 public class OrderCreationTest implements TestData{
 
@@ -34,14 +33,11 @@ public class OrderCreationTest implements TestData{
     client.setRequestSpecification(requestSpecification);
     ingredients =  client.getIngredients().extract().body().as(Ingredients.class).getData();
     random = new Random();
-//    for (int i=0; i<ingredients.size();i++) {
-//      System.out.println(ingredients.get(i).get_id());
-//    }
   }
 
   @After
   public void tearDown() {
-    if (user.equals(USER)) {
+    if (user!= null && user.equals(USER)) {
       Authorization authorization = client.login(user).extract().as(Authorization.class);
       client.deleteUser(authorization.getAccessToken());}
   }
@@ -52,8 +48,8 @@ public class OrderCreationTest implements TestData{
     String orderIngredient = ingredients.get(random.nextInt(ingredients.size())).get_id();
     OrderIngredients orderIngredients = new OrderIngredients(orderIngredient);
     String json = gson.toJson(orderIngredients);
-    ValidatableResponse response = client.makeOrder(json);
-    response.assertThat().statusCode(200);
+    ValidatableResponse response = client.makeOrder(json, "");
+    response.assertThat().statusCode(200).body("order.number", notNullValue()); //создание работает без авторизации
   }
 
   @Test
@@ -65,14 +61,14 @@ public class OrderCreationTest implements TestData{
     String orderIngredient = ingredients.get(random.nextInt(ingredients.size())).get_id();
     OrderIngredients orderIngredients = new OrderIngredients(orderIngredient);
     String json = gson.toJson(orderIngredients);
-    ValidatableResponse response = client.makeOrderAuthorized(json, authorization.getAccessToken());
+    ValidatableResponse response = client.makeOrder(json, authorization.getAccessToken());
     response.assertThat().statusCode(200).body("order.owner.email", is(user.getEmail()));
   }
 
 
   @Test
   public void orderCreationNoIngredientsFailure() {
-    ValidatableResponse response = client.makeOrder("");
+    ValidatableResponse response = client.makeOrder("", "");
     response.assertThat().statusCode(400).assertThat().body(containsString("Ingredient ids must be provided"));
   }
 
@@ -82,7 +78,7 @@ public class OrderCreationTest implements TestData{
     String orderIngredient = ingredients.get(random.nextInt(ingredients.size())).get_id() + "invalid";
     OrderIngredients orderIngredients = new OrderIngredients(orderIngredient);
     String json = gson.toJson(orderIngredients);
-    ValidatableResponse response = client.makeOrder(json);
+    ValidatableResponse response = client.makeOrder(json, "");
     response.assertThat().statusCode(500);
   }
 

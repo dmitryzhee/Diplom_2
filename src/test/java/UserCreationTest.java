@@ -1,3 +1,4 @@
+import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -6,8 +7,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 
 public class UserCreationTest implements TestData{
 
@@ -38,7 +38,7 @@ public class UserCreationTest implements TestData{
     public void userCreationSuccess() {
         user = USER;
         ValidatableResponse response = client.createUser(user);
-        response.assertThat().statusCode(200).body("success", is(true));
+        response.assertThat().statusCode(200).body("accessToken", notNullValue());
     }
 
     @Test

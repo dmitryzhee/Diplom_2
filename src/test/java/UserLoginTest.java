@@ -6,8 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 
 public class UserLoginTest implements TestData {
 
@@ -40,7 +39,7 @@ public class UserLoginTest implements TestData {
     user = USER;
     client.createUser(user);
     ValidatableResponse response = client.login(user);
-    response.assertThat().statusCode(200).body("success", is(true));
+    response.assertThat().statusCode(200).body("accessToken", notNullValue());
   }
 
   @Test
