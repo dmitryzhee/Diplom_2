@@ -9,6 +9,8 @@ public interface TestData {
 
     String LOGIN_ENDPOINT = "/api/auth/login";
 
+    String LOGOUT_ENDPOINT = "/api/auth/logout";
+
     String ORDERS_ENDPOINT = "/api/orders";
 
     String INGREDIENTS_ENDPOINT = "/api/ingredients";

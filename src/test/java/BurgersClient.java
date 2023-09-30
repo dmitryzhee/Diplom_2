@@ -28,11 +28,30 @@ public class BurgersClient implements TestData {
                 .log().all();
     }
 
+    public ValidatableResponse logout(String authorization) {
+        return given()
+                .spec(requestSpecification)
+                .body(authorization)
+                .post(LOGOUT_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
     public ValidatableResponse deleteUser(String token) {
         return given()
                 .spec(requestSpecification)
                 .header("authorization", token)
                 .delete(USER_DATA_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
+    public ValidatableResponse editUser(String token, User user) {
+        return given()
+                .spec(requestSpecification)
+                .body(user)
+                .header("authorization", token)
+                .patch(USER_DATA_ENDPOINT)
                 .then()
                 .log().all();
     }

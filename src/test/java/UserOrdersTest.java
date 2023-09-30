@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Random;
 
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
 
 public class UserOrdersTest implements TestData{
 
