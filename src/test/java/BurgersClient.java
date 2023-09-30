@@ -54,6 +54,18 @@ public class BurgersClient implements TestData {
                 .log().all();
     }
 
+    public ValidatableResponse makeOrderAuthorized(String ingredientsID, String authorization) {
+        return given()
+                .spec(requestSpecification)
+                .header("Authorization", authorization)
+                .body(ingredientsID)
+                .post(ORDER_CREATION_ENDPOINT)
+                .then()
+                .log().all();
+    }
+
+
+
 
 
 
