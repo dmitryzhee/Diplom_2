@@ -15,8 +15,6 @@ public class UserEditTest implements TestData{
 
   private RequestSpecification requestSpecification;
 
-  private ValidatableResponse response;
-
   private User user;
 
   @Before
@@ -65,8 +63,44 @@ public class UserEditTest implements TestData{
     client.logout(authorization.getRefreshToken());
     ValidatableResponse response = client.login(user);
     response.assertThat().statusCode(200).body("accessToken", notNullValue());
-
   }
+
+  @Test
+  public void unauthorizedUserNameChangeFailure() {
+    user = USER;
+    client.createUser(user);
+    String oldName = user.getName();
+    user.setName("editedName");
+    ValidatableResponse response = client.editUser("", user);
+    response.assertThat().statusCode(401).body(containsString("You should be authorised"));
+    user.setName(oldName);
+  }
+
+  @Test
+  public void unauthorizedUserEmailChangeFailure() {
+    user = USER;
+    client.createUser(user);
+    String oldEmail = user.getEmail();
+    user.setEmail("editedemail401@burger.test");
+    ValidatableResponse response = client.editUser("", user);
+    response.assertThat().statusCode(401).body(containsString("You should be authorised"));
+    user.setEmail(oldEmail);
+  }
+
+  @Test
+  public void unauthorizedPasswordChangeFailure() {
+    user = USER;
+    client.createUser(user);
+    String oldPassword = user.getPassword();
+    user.setPassword("editedPassword123!");
+    ValidatableResponse response = client.editUser("", user);
+    response.assertThat().statusCode(401).body(containsString("You should be authorised"));
+    user.setPassword(oldPassword);
+  }
+
+
+
+
 
 
 }

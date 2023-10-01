@@ -40,7 +40,7 @@ public class BurgersClient implements TestData {
     public ValidatableResponse deleteUser(String token) {
         return given()
                 .spec(requestSpecification)
-                .header("authorization", token)
+                .header("Authorization", token)
                 .delete(USER_DATA_ENDPOINT)
                 .then()
                 .log().all();
@@ -50,7 +50,7 @@ public class BurgersClient implements TestData {
         return given()
                 .spec(requestSpecification)
                 .body(user)
-                .header("authorization", token)
+                .header("Authorization", token)
                 .patch(USER_DATA_ENDPOINT)
                 .then()
                 .log().all();

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Added UserEditTest">
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated OrderCreationTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgersClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserEditTest.java" afterDir="false" />
@@ -38,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Sky/Home/Diplom_2_API/pom.xml"
+    "last_opened_file_path": "C:/Users/Dmitry/Home/Diplom_2_API/pom.xml"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -51,22 +51,21 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess">
+  <component name="RunManager" selected="JUnit.UserEditTest">
+    <configuration name="UserEditTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserEditTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserEditTest.authorizedUserEmailChangeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserEditTest" />
       <option name="METHOD_NAME" value="authorizedUserEmailChangeSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserEditTest.authorizedUserNameChangeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2_API" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserEditTest" />
-      <option name="METHOD_NAME" value="authorizedUserNameChangeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,11 +81,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserOrdersTest.authorizedUserGetOrdersSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserEditTest.unauthorizedUserNameChangeFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserOrdersTest" />
-      <option name="METHOD_NAME" value="authorizedUserGetOrdersSuccess" />
+      <option name="MAIN_CLASS_NAME" value="UserEditTest" />
+      <option name="METHOD_NAME" value="unauthorizedUserNameChangeFailure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess" />
+        <item itemvalue="JUnit.UserEditTest" />
         <item itemvalue="JUnit.UserEditTest.authorizedUserEmailChangeSuccess" />
-        <item itemvalue="JUnit.UserEditTest.authorizedUserNameChangeSuccess" />
+        <item itemvalue="JUnit.UserEditTest.unauthorizedUserNameChangeFailure" />
         <item itemvalue="JUnit.UserOrdersTest.getOrdersUnauthorizedUserFailure" />
-        <item itemvalue="JUnit.UserOrdersTest.authorizedUserGetOrdersSuccess" />
+        <item itemvalue="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess" />
       </list>
     </recent_temporary>
   </component>
