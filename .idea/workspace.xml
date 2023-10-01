@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated OrderCreationTest">
-      <change afterPath="$PROJECT_DIR$/target/allure-results/12af21b7-670f-4484-8970-4f0fa7eb7c7f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/16344459-0976-49cf-a82d-5e703044e0e8-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/17fda160-1464-42a8-8062-1fb4f54b6a38-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/331d3a44-45fe-409e-bd0c-514943fa9495-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/339190d3-016e-4038-a24c-b55155e9b502-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/3ad1573b-90f2-490b-8c32-b2ef4533b363-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/3fc37465-db98-47a7-94c3-4f84cbc52c87-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/56cb3194-5dd4-4a56-a1ea-6e0c2c873f80-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/5d7fbaed-add6-4252-8072-4729aca3a192-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/5e7ed8e6-0fb9-4af0-a78c-71ac36641628-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/6e29dd3c-3939-493b-9a49-99b091428489-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/71f1ab8a-d36d-45ce-a69b-9145b7848196-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/7550c502-c18b-4641-b9e3-2d3c294e59e8-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/7f4724e8-4d47-487b-8183-db989f2a3122-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/c79af608-208b-4889-98d5-1d8ccb387519-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/c94ad627-9028-43a8-bd28-d6c887c260fb-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/ca892557-901d-4936-b625-010f0c4d7f7f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/de735e78-ba89-43a8-a550-7656f3f9b513-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/ecd2ff8f-80cc-41ed-b477-d3f6b7efb6fd-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/fe64fa00-f846-4acb-8736-6ccc182bb799-result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated UserEditTest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,14 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Dmitry/Home/Diplom_2_API/pom.xml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Sky/Home/Diplom_3/pom.xml&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -70,7 +46,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Diplom_2_API">
+  <component name="RunManager" selected="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess">
     <configuration name="All in Diplom_2_API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
@@ -98,21 +74,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserEditTest.unauthorizedUserNameChangeFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserEditTest.authorizedUserPasswordChangeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserEditTest" />
-      <option name="METHOD_NAME" value="unauthorizedUserNameChangeFailure" />
+      <option name="METHOD_NAME" value="authorizedUserPasswordChangeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserOrdersTest.getOrdersUnauthorizedUserFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserEditTest.unauthorizedUserNameChangeFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserOrdersTest" />
-      <option name="METHOD_NAME" value="getOrdersUnauthorizedUserFailure" />
+      <option name="MAIN_CLASS_NAME" value="UserEditTest" />
+      <option name="METHOD_NAME" value="unauthorizedUserNameChangeFailure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess" />
         <item itemvalue="JUnit.All in Diplom_2_API" />
         <item itemvalue="JUnit.UserEditTest" />
         <item itemvalue="JUnit.UserEditTest.authorizedUserEmailChangeSuccess" />
         <item itemvalue="JUnit.UserEditTest.unauthorizedUserNameChangeFailure" />
-        <item itemvalue="JUnit.UserOrdersTest.getOrdersUnauthorizedUserFailure" />
       </list>
     </recent_temporary>
   </component>

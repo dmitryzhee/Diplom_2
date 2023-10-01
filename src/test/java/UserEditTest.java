@@ -61,7 +61,7 @@ public class UserEditTest implements TestData{
     user.setPassword("editedPassword123!");
     client.editUser(authorization.getAccessToken(), user);
     client.logout(authorization.getRefreshToken());
-    ValidatableResponse response = client.login(user);
+    ValidatableResponse response = client.login(user); //пользователь может зайти в систему с новым паролем
     response.assertThat().statusCode(200).body("accessToken", notNullValue());
   }
 
