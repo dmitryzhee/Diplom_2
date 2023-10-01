@@ -28,14 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Sky/Home/Diplom_3/pom.xml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Sky/Home/Diplom_1/pom.xml"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -46,11 +46,21 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess">
+  <component name="RunManager" selected="JUnit.OrderCreationTest.orderCreationInvalidIngredientsFailure">
     <configuration name="All in Diplom_2_API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderCreationTest.orderCreationInvalidIngredientsFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderCreationTest" />
+      <option name="METHOD_NAME" value="orderCreationInvalidIngredientsFailure" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,16 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserEditTest.unauthorizedUserNameChangeFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2_API" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserEditTest" />
-      <option name="METHOD_NAME" value="unauthorizedUserNameChangeFailure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderCreationTest.orderCreationInvalidIngredientsFailure" />
         <item itemvalue="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess" />
         <item itemvalue="JUnit.All in Diplom_2_API" />
         <item itemvalue="JUnit.UserEditTest" />
         <item itemvalue="JUnit.UserEditTest.authorizedUserEmailChangeSuccess" />
-        <item itemvalue="JUnit.UserEditTest.unauthorizedUserNameChangeFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696173312484</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated UserEditTest">
+      <created>1696190777848</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696190777848</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,8 +230,8 @@
     <MESSAGE value="Updated OrderCreationTest and UserCreationTest" />
     <MESSAGE value="Updated UserOrdersTest" />
     <MESSAGE value="Added UserEditTest" />
-    <MESSAGE value="Updated UserEditTest" />
     <MESSAGE value="Updated OrderCreationTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated OrderCreationTest" />
+    <MESSAGE value="Updated UserEditTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UserEditTest" />
   </component>
 </project>
