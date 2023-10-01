@@ -66,7 +66,7 @@ public class OrderCreationTest implements TestData{
   }
 
 
-  @Test
+  @Test //создание заказа с ингредиентами проверяется в тестах с авторизацией
   public void orderCreationNoIngredientsFailure() {
     ValidatableResponse response = client.makeOrder("", "");
     response.assertThat().statusCode(400).assertThat().body(containsString("Ingredient ids must be provided"));
