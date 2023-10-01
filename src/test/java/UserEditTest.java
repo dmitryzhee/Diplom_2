@@ -98,9 +98,4 @@ public class UserEditTest implements TestData{
     user.setPassword(oldPassword);
   }
 
-
-
-
-
-
 }

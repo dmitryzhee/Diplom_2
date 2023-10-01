@@ -43,7 +43,7 @@ public class OrderCreationTest implements TestData{
   }
 
   @Test
-  public void orderCreationSuccess() {
+  public void unauthorizedUserOrderCreationSuccess() {
     Gson gson = new Gson();
     String orderIngredient = ingredients.get(random.nextInt(ingredients.size())).get_id();
     OrderIngredients orderIngredients = new OrderIngredients(orderIngredient);

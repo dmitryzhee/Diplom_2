@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated OrderCreationTest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgersClient.java" afterDir="false" />
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated UserEditTest">
       <change beforePath="$PROJECT_DIR$/src/test/java/UserEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserEditTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BurgersClient.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696111311889</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated UserEditTest">
+      <created>1696172218666</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696172218666</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +214,7 @@
     <MESSAGE value="Updated OrderCreationTest and UserCreationTest" />
     <MESSAGE value="Updated UserOrdersTest" />
     <MESSAGE value="Added UserEditTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added UserEditTest" />
+    <MESSAGE value="Updated UserEditTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UserEditTest" />
   </component>
 </project>
