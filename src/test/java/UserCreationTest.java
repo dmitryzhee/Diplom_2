@@ -1,4 +1,3 @@
-import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -7,7 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.notNullValue;
 
 public class UserCreationTest implements TestData{
 

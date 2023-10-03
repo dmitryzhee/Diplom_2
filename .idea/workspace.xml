@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated UserEditTest" />
+    <list default="true" id="9acf4976-feff-47bc-a0e9-e5fdda8e1350" name="Changes" comment="Updated UserOrdersTest and optimized imports">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IngredientsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IngredientsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserEditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserEditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0c7347b1-4996-4546-a32a-08e797579bfc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/137c2a37-4554-4e01-ba8a-0762324b063c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1b833183-a67a-4f49-a41a-4b123f231e59-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1ec6dcb4-c920-4e99-b572-27531a780af0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2131f1ae-ed06-45fc-b478-071c7315bf52-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/48bf0b76-9a47-47f8-9997-4aecbb578b7a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6a6aac07-cf6e-4ea9-9623-8b9a3a610ca9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6e76265a-c9a2-493d-abf1-80d675294df1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/854f1fd9-38c7-4a4a-8b8b-d7a534987f4a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8a6caec1-024d-46d9-b99b-4d3dfe6875a6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8b9cee6b-46d0-4180-9f53-11e18d036441-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8d43a462-3a21-46ae-8484-c5d61ad36a05-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/abc58ec7-448e-430a-8730-503d7be2beb3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b3f2875d-71a9-437e-a629-73a21fc1833d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b450125f-2067-41c0-b445-265573549140-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d25c9baf-4645-40c2-9ed0-a87dc5d223d9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/dce96eab-dff7-4665-b96f-f9694cf98ecc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e16befde-e2ef-4192-8c8d-9f634ffecb50-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f0e51285-ab7c-4cc8-afeb-6b4440cca4d9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f3cfebdc-6881-429e-b699-d4fb776cbb94-result.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Sky/Home/Diplom_1/pom.xml"
+    "last_opened_file_path": "C:/Users/Dmitry/Home/Diplom_2_API/pom.xml"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -46,7 +73,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderCreationTest.orderCreationInvalidIngredientsFailure">
+  <component name="RunManager" selected="JUnit.All in Diplom_2_API">
     <configuration name="All in Diplom_2_API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2_API" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,9 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Diplom_2_API" />
         <item itemvalue="JUnit.OrderCreationTest.orderCreationInvalidIngredientsFailure" />
         <item itemvalue="JUnit.UserEditTest.authorizedUserPasswordChangeSuccess" />
-        <item itemvalue="JUnit.All in Diplom_2_API" />
         <item itemvalue="JUnit.UserEditTest" />
         <item itemvalue="JUnit.UserEditTest.authorizedUserEmailChangeSuccess" />
       </list>
@@ -208,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696190777848</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated OrderCreationTest">
+      <created>1696233590669</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696233590669</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,8 +264,9 @@
     <MESSAGE value="Updated OrderCreationTest and UserCreationTest" />
     <MESSAGE value="Updated UserOrdersTest" />
     <MESSAGE value="Added UserEditTest" />
-    <MESSAGE value="Updated OrderCreationTest" />
     <MESSAGE value="Updated UserEditTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UserEditTest" />
+    <MESSAGE value="Updated .gitignore" />
+    <MESSAGE value="Updated UserOrdersTest and optimized imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UserOrdersTest and optimized imports" />
   </component>
 </project>

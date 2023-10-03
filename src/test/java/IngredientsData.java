@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class IngredientsData {
 
   private String _id;

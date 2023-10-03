@@ -64,7 +64,7 @@ public class UserOrdersTest implements TestData{
     for (int i = 0; i<orders.size(); i++) {
       orderStatus.add(orders.get(i).getStatus()); //проверяется, что возращается список заказов с данными о них, у каждого заказа есть статус
     }
-    Assert.assertTrue(orderStatus.size() == burgerCount); //1 статус на 1 заказ, поэтому количество статусов = количеству заказов
+    Assert.assertEquals(orderStatus.size(), burgerCount); //1 статус на 1 заказ, поэтому количество статусов = количеству заказов
   }
 
   @Test
